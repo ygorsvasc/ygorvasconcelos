@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: #b4cbeb ;
+        }
+
+        .container {
+            display: grid;
+        }
+        
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+            background-color: #0067f8 ;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 35px;
+            border: solid #5437a5 3px;
+            background-color: #ffffff;
+            margin-right: 35px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        .principal {
+                margin: 0;
+                display: grid;
+                place-items: center;
+                height: 100px;
+                background-color: #004b88;
+                margin-top: 45px;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+
+        }
+
+        .contato {
+                max-width: 600px;
+                margin: 0 auto;
+        }
+
+        h2 {
+                color: #333;
+        }
+
+        form {
+                display: flex;
+                flex-direction: column;
+        }
+
+        label {
+                margin-top: 10px;
+                font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+               padding: 10px;
+               margin-top: 5px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+        }
+
+        textarea {
+               resize: vertical; /* redimensionar a caixa de texto verticalmente */
+        }
+
+        button {
+               margin-top: 20px;
+               padding: 10px;
+               background-color: #007bff;
+               color: #fff;
+               border: none;
+               border-radius: 4px;
+               cursor: pointer;
+        }
+
+        button:hover {
+               background-color: #0056b3;
+        }
+
+        footer {
+               background-color: #f4f4f4;
+               padding: 10px;
+               text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+            <li><a href="portfolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="principal">
+
+        <h1>Quer falar comigo? Deixe uma mensagem!</h1> 
+
+     </section>
+
+     <main>
+        <section class="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="25"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Ygor da Silva Vasconcelos para Trabalho.</p>
+    </footer>
+
+</body>
+</html>

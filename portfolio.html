@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: #b4cbeb ;
+        }
+
+        .container {
+            display: grid;
+        }
+        
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+            background-color: #0067f8 ;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 10px 35px;
+            border: solid #5437a5 3px;
+            background-color: #ffffff;
+            margin-right: 35px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        .principal {
+                margin: 0;
+                display: grid;
+                place-items: center;
+                height: 100px;
+                background-color: #004b88;
+                margin-top: 45px;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+
+        }
+
+        h2 {
+        margin-left: 20px;
+        }
+
+        main {
+                display: flex;
+                justify-content: center; /* Centraliza o contêiner horizontalmente */
+                align-items: center; /* Centraliza o contêiner verticalmente */
+        }
+
+        .container2 {
+                display: flex;
+                gap: 380px; /* Espaço entre as imagens e descrições */
+        }
+
+        .item {
+                display: flex;
+                flex-direction: column; /*imagem e descrição em coluna */
+                align-items: center; /* Centraliza a imagem e descrição */
+                text-align: center; /* Centraliza o texto da descrição */
+        }
+
+        .imagem {
+                width: 300px; /* largura das imagens */
+                height: 400px; /* altura das imagens */
+                object-fit: cover; /* Não distorce a imagem */
+                border-radius: 8px; /* Borda da imagem */
+        }
+
+        .descricao {
+                margin-top: 10px; /* Espaço entre a imagem e a descrição */
+                font-size: 16px; /* tamanho da fonte da descrição */
+                color: #333; /* Cor do texto*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+            <li><a href="portfolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="principal">
+        <h1>Projetos</h1>
+     </section>
+     <h2>Até então não desenvolvi nenhum projeto, apenas os realizados em aulas, então segue alguns deles:</h2>
+       
+     <main>
+        <div class="container2">
+            <div class="item">
+                <img src="img/trabalho1.PNG" alt="Imagem 1" class="imagem">
+                <div class="descricao">Exercício da aula prática 4</div>
+            </div>
+            <div class="item">
+                <img src="img/Trabalho2.PNG" alt="Imagem 2" class="imagem">
+                <div class="descricao">Um dos trabalhos valendo nota na matéria de Lógica de Programação e algoritmo</div>
+            </div>
+            <div class="item">
+                <img src="img/Trabalho3.PNG" alt="Imagem 3" class="imagem">
+                <div class="descricao">Exercício da aula prática 3</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

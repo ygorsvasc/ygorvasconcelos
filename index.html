@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ygor Vasconcelos</title>
+    <style>
+
+            body {
+                margin: 0;
+                background: #b4cbeb ; /* Cor da página */
+            }
+
+            .container {
+                display: grid;  
+            }
+        
+            .menu {                              
+                grid-column-start: 6;
+                grid-column-end: 12;
+                justify-content: center; /*centraliza o menu*/
+                gap: 20px; /* Espaçamento dos botões*/
+                background-color: #0067f8 ; /* Faixa do Menu */
+            }
+
+            ul {                                  
+                list-style-type: none;
+                color: #000000;
+            }
+
+            a,
+            a:link {                                
+                text-decoration: none;
+                padding: 10px 35px;
+                border: solid #5437a5 3px; /* Borda dos botões */
+                background-color: #ffffff; /*Cor dos botões */
+                margin-right: 35px; /*Maneira que consegui para dar espaço nos botões*/
+            }
+
+            li {
+                float: left;
+            }
+
+            .principal {
+                margin: 0;
+                display: grid;
+                place-items: center;
+                height: 100px;
+                background-color: #004b88; 
+                margin-top: 45px;
+                font-size: 20px; /* Tamhanho da fonte */
+                color: white;
+                text-align: center;
+
+            }
+
+            p {
+                margin-bottom: 0px;
+                margin-top: 50px;
+                color: black;
+                text-align: center;
+
+            }
+ 
+            .container2 {
+                display: flex;
+                justify-content: center; /* Coloca a imagem no centro */
+                gap: 20px; /* Espaço entre as imagens */
+                position: fixed; /* Fixando a imagem na parte inferior */
+                bottom: 10px; /* Alinhamento do contêiner na tela */
+                left: 50%; 
+                transform: translateX(-50%); /* centralizando posições corretamente */
+            }
+
+            .imagem {
+                width: 310px; 
+                height: auto; 
+                border-radius: 10px; /* Cantos das imagens */
+            }
+
+    </style>
+</head>
+
+<body>
+    <nav class="container menu"> 
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+            <li><a href="portfolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="principal">
+        <h1>Sobre Mim</h1>
+    <p>Me chamo Ygor da Silva Vasconcelose tenho 20 anos de idade e moro na cidade de Piracicaba-SP na casa dos meus pais. <br>Sou Cristão e sou membro da Igreja Batista Betesda, onde eu fui batizado e<br>hoje sou líder do ministério de iluminação e ministro no louvor tocando guitarra e cantando.
+    </p>
+    <p>Neste ano de 2024 fiquei noivo da minha namorada Vitória, onde compramos o nosso apartamento! Um sonho realizado.
+    <br>Meu principais Hobbies hoje são assistir filmes, jogar jogos e tocar guitarra. Estou estudando ADS em busca de uma mudança <br>de emprego para a área da técnologia, onde sempre gostei.
+     </section>
+
+    <div class="container2">
+        <img src="img/Ygor1.jpeg" alt="Imagem 1" class="imagem"> 
+        <img src="img/Ygor2.jpeg" alt="Imagem 2" class="imagem">
+    </div>
+</body>
+</html>
